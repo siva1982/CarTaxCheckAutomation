@@ -78,7 +78,7 @@
                 <version>2.16</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <chrome.driver.path>/Users/ashok/Ashok/Selenium/webdrivers/chromedriver</chrome.driver.path>
+                        <chrome.driver.path>/usr/local/bin/chromedriver</chrome.driver.path>
                     </systemPropertyVariables>
                 </configuration>
                 <executions>
