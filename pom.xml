@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.tech.selenium</groupId>
-    <artifactId>Car-Check-Automation</artifactId>
+    <artifactId>Car-Tax-Check-Automation</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Selenium Cucumber Junit Template</name>
+    <name>Car TaxCheck Automation</name>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
