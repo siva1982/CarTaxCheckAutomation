@@ -1,0 +1,91 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4434739454,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.java:22"
+            }
+          },
+          {
+            "result": {
+              "duration": 1940229119,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CarTaxCheckStepDefs.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Validate Car Tax details",
+        "description": "",
+        "id": "selenium-cucumber-java-example;validate-car-tax-details",
+        "after": [
+          {
+            "result": {
+              "duration": 119186466,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.java:40"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 75925563,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have vehicle registration numbers",
+            "match": {
+              "location": "CarTaxCheckStepDefs.i_have_vehicle_registration_numbers()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4049795796,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I check each registration number on cartaxcheck.com",
+            "match": {
+              "location": "CarTaxCheckStepDefs.i_check_each_registration_number_on_cartaxcheck_com()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat com.tech.selenium.stepdefinitions.CarTaxCheckStepDefs.lambda$i_can_verify_tax_details_with_expected_values$1(CarTaxCheckStepDefs.java:99)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1541)\n\tat com.tech.selenium.stepdefinitions.CarTaxCheckStepDefs.i_can_verify_tax_details_with_expected_values(CarTaxCheckStepDefs.java:97)\n\tat ✽.I can verify tax details with expected values(features/Google.feature:6)\n",
+              "duration": 3845244,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I can verify tax details with expected values",
+            "match": {
+              "location": "CarTaxCheckStepDefs.i_can_verify_tax_details_with_expected_values()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Selenium Cucumber Java Example",
+    "description": "",
+    "id": "selenium-cucumber-java-example",
+    "keyword": "Feature",
+    "uri": "features/Google.feature",
+    "tags": []
+  }
+]
