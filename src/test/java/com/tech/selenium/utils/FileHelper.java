@@ -28,7 +28,8 @@ public class FileHelper {
     private static final String CAR_INPUT_FILE_NAME = System.getProperty("user.dir")+"/src/test/resources/input/car_input.txt";
     private static final String CAR_OUTPUT_FILE_NAME = System.getProperty("user.dir")+"/src/test/resources/output/car_output.txt";
     private static final String INPUT_RESOURCES_DIR = System.getProperty("user.dir")+"/src/test/resources/input";
-    private static final String VEHICLE_NUMBER_REGEX = "(?=.{1,7})(([a-zA-Z]){1,3}(\\d){1,3}(\\s?)([a-zA-Z]){1,3})";
+    //private static final String VEHICLE_NUMBER_REGEX = "(?=.{1,7})(([a-zA-Z]){1,3}(\\d){1,3}(\\s?)([a-zA-Z]){1,3})";
+    private static final String VEHICLE_NUMBER_REGEX = "[A-Z]{2}[0-9]{2}\\s?[A-Z]{3}|[A-Z][0-9]{1,3}[A-Z]{3}|[A-Z]{3}[0-9]{1,3}[A-Z]|[0-9]{1,4}[A-Z]{1,2}|[0-9]{1,3}[A-Z]{1,3}|[A-Z]{1,2}[0-9]{1,4}|[A-Z]{1,3}[0-9]{1,3}|[A-Z]{1,3}[0-9]{1,4}|[0-9]{3}[DX]{1}[0-9]{3}";
     private static final String VEHICLE_NUMBER_REGEX_WITH_WRONG_REGEX = "(?=.{1,7})(([a-zA-Z]){1,3}(\\d){1,3})";
 
     /**

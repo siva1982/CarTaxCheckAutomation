@@ -6,16 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 4434739454,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GoogleSteps.java:22"
-            }
-          },
-          {
-            "result": {
-              "duration": 1940229119,
+              "duration": 3011216195,
               "status": "passed"
             },
             "match": {
@@ -26,24 +17,13 @@
         "line": 3,
         "name": "Validate Car Tax details",
         "description": "",
-        "id": "selenium-cucumber-java-example;validate-car-tax-details",
-        "after": [
-          {
-            "result": {
-              "duration": 119186466,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GoogleSteps.java:40"
-            }
-          }
-        ],
+        "id": "car-tax-check;validate-car-tax-details",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 75925563,
+              "duration": 11425305,
               "status": "passed"
             },
             "line": 4,
@@ -55,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 4049795796,
+              "duration": 23021866076,
               "status": "passed"
             },
             "line": 5,
@@ -67,9 +47,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\n\tat com.tech.selenium.stepdefinitions.CarTaxCheckStepDefs.lambda$i_can_verify_tax_details_with_expected_values$1(CarTaxCheckStepDefs.java:99)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1541)\n\tat com.tech.selenium.stepdefinitions.CarTaxCheckStepDefs.i_can_verify_tax_details_with_expected_values(CarTaxCheckStepDefs.java:97)\n\tat ✽.I can verify tax details with expected values(features/Google.feature:6)\n",
-              "duration": 3845244,
-              "status": "failed"
+              "duration": 7887588,
+              "status": "passed"
             },
             "line": 6,
             "name": "I can verify tax details with expected values",
@@ -81,11 +60,11 @@
         ]
       }
     ],
-    "name": "Selenium Cucumber Java Example",
+    "name": "Car Tax Check",
     "description": "",
-    "id": "selenium-cucumber-java-example",
+    "id": "car-tax-check",
     "keyword": "Feature",
-    "uri": "features/Google.feature",
+    "uri": "features/CarTaxCheck.feature",
     "tags": []
   }
 ]

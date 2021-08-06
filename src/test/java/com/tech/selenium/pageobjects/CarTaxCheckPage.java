@@ -31,7 +31,6 @@ public class CarTaxCheckPage extends  Page{
 
     public boolean isDisplayed() {
         String header = elementHelper.findElementByTagName("h1").getText();
-        System.out.println("===========>"+ header);
         return header.equals(PAGE_TITLE);
     }
 

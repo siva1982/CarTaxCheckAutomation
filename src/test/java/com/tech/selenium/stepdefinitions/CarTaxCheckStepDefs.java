@@ -64,7 +64,6 @@ public class CarTaxCheckStepDefs {
     @When("I check each registration number on cartaxcheck.com")
     public void i_check_each_registration_number_on_cartaxcheck_com() {
         actualVehicles = new ArrayList<>();
-        System.out.println("=======================>RegNumbers" + vehicleRegistrationNumbers);
         vehicleRegistrationNumbers.forEach(registrationNumber -> {
 
             //Loading Car Tax Check Page
@@ -72,6 +71,7 @@ public class CarTaxCheckStepDefs {
             assertTrue(carTaxCheckPage.isDisplayed());
             carTaxCheckPage.enterRegistrationNumber(registrationNumber);
             carTaxCheckPage.clickOnFreeCarCheckButton();
+
             //Check that registration number
             String actualRegistrationNumber = carTaxCheckPage.getRegistrationNumber().replaceAll("\\s", "");
             String expectedRegistrationNumber = registrationNumber.replaceAll("\\s", "");
@@ -97,7 +97,7 @@ public class CarTaxCheckStepDefs {
         }
             actualVehicles.forEach(actualVehicle -> {
                 Vehicle expectedVehicleRegistration = expectedVehicles.get(actualVehicle.getRegistration());
-                assertEquals(actualVehicle.getRegistration(), "DN09HRM");
+                assertEquals(actualVehicle.getRegistration(), expectedVehicleRegistration.getRegistration());
             });
         }
 }

@@ -1,4 +1,4 @@
-Feature: Selenium Cucumber Java Example
+Feature: Car Tax Check
 
   Scenario: Validate Car Tax details
     Given I have vehicle registration numbers
